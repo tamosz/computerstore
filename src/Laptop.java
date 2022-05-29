@@ -1,7 +1,12 @@
 public class Laptop extends Desktop{
-    private int screenSize;
+    private double screenSize;
 
-    public int getScreenSize() {
+    public Laptop(String category, String type, String id, String brand, String cpuFamily, int memorySize, int ssdCapacity, double screenSize, int price) {
+        super(category, type, id, brand, cpuFamily, memorySize, ssdCapacity, price);
+        this.screenSize = screenSize;
+    }
+
+    public double getScreenSize() {
         return screenSize;
     }
 
