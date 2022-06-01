@@ -194,7 +194,6 @@ public abstract class Item {
             while (it.hasNext()) {
                 Map.Entry<String, Item> i = it.next();
                 currentItem = i.getValue();//type casting to item to access getter methods
-                System.out.println("hi");
                 if (Objects.equals(currentItem.getType(), type) && Objects.equals(currentItem.getCategory(), category)) {
                     data[counter][0] = currentItem.getCategory();
                     data[counter][1] = currentItem.getType();
@@ -223,10 +222,5 @@ public abstract class Item {
         }
         //this line is only to make the method valid, should never reach this point
         return new Desktop("1", "2", "3", "4", "5", 6, 7, 8);
-    }
-
-    public static void main(String[] args) {
-        addTestItems();
-        itemToTableFormat();
     }
 }
