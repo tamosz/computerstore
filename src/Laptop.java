@@ -1,4 +1,4 @@
-public class Laptop extends Desktop{
+public class Laptop extends Desktop {
     private double screenSize;
 
     public Laptop(String category, String type, String id, String brand, String cpuFamily, int memorySize, int ssdCapacity, double screenSize, int price) {
@@ -8,9 +8,5 @@ public class Laptop extends Desktop{
 
     public double getScreenSize() {
         return screenSize;
-    }
-
-    public void setScreenSize(int screenSize) {
-        this.screenSize = screenSize;
     }
 }

@@ -17,15 +17,12 @@ public class Desktop extends Item {
         return memorySize;
     }
 
-    public void setMemorySize(int memorySize) {
-        this.memorySize = memorySize;
+    @Override
+    public double getScreenSize() {
+        return 0;
     }
 
     public int getSsdCapacity() {
         return ssdCapacity;
-    }
-
-    public void setSsdCapacity(int ssdCapacity) {
-        this.ssdCapacity = ssdCapacity;
     }
 }

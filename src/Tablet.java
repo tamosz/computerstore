@@ -5,10 +5,6 @@ public class Tablet extends Item{
         return screenSize;
     }
 
-    public void setScreenSize(int screenSize) {
-        this.screenSize = screenSize;
-    }
-
     public Tablet(String category, String type, String id, String brand, String cpuFamily, double screenSize, int price) {
         this.setCategory(category);
         this.setType(type);
@@ -17,5 +13,15 @@ public class Tablet extends Item{
         this.setCpuFamily(cpuFamily);
         this.screenSize = screenSize;
         this.setPrice(price);
+    }
+
+    @Override
+    public int getMemorySize() {
+        return 0;
+    }
+
+    @Override
+    public int getSsdCapacity() {
+        return 0;
     }
 }
